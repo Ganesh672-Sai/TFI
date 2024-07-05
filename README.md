@@ -1,3 +1,2 @@
-# H.O.P.E.
-Help other people eat
- 
+# T.F.I
+Tackling Food Insecurities 
