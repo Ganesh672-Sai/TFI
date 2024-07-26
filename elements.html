@@ -39,23 +39,49 @@
 						<div class="content">
 							<header class="align-center">
 								<h2>Quality Predictor</h2>
-								<p>Rate your food as consumable or  non-consumable</p>
+								<h4>Rate your food as consumable or  non-consumable</h4>
 							</header>
 							<hr />
-							<p>1. For Raw food item- <br> a) More than 2 days- 2 points <br> b) 1-2 days - 3 points <br> c) 1 or less than 1 day- 4 points</p>
-							<p>
+							<h4>1. For Raw food item- <br> a) More than 2 days- 2 points <br> b) 1-2 days - 3 points <br> c) 1 or less than 1 day- 4 points</h4>
+							<h4>
 								2. Processed Food item- <br> a) More than 2 days- 0 <br> b) 1-2 days- 2 points <br> c) 1 or less than 1 day- 3 points
-							</p>
-							<p> 3. For Canned/Tetrapacked food <br> a) 10-12 months- 2 points <br> b) 5-10 months- 3 points <br> c) 2-3 weeks- 4 points <br> d) less than 2 weeks - 5 points 
+							</h4>
+							<h4> 3. For Canned/Tetrapacked food <br> a) 10-12 months- 2 points <br> b) 5-10 months- 3 points <br> c) 2-3 weeks- 4 points <br> d) less than 2 weeks - 5 points 
 								<br>
 								<br>
 								<br>
 								<br>
-                                <p> <b>KEY</b> <br> >= 4 Good Quality <br> < 4 & >= 3 - Consumable <br> < 3 - Non- Consumable
-							</p>
+                                <h4> <b>KEY</b> <br> >= 4 Good Quality <br> < 4 & >= 3 - Consumable <br> < 3 - Non- Consumable
+								</h4>
 						</div>
+						<section class="card">
+							<h2>Quality Prediction</h2>
+							<form id="quality-form">
+								<label for="food-type">Type of Food:</label>
+								<select id="food-type" name="food-type">
+									<option value="vegetables">Vegetables</option>
+									<option value="fruits">Fruits</option>
+									<option value="grains">Grains</option>
+									<option value="dairy">Dairy</option>
+									<option value="meat">Meat</option>
+								</select>
+				
+								<label for="donation-date">Donation Date:</label>
+								<input type="date" id="donation-date" name="donation-date" required>            <br>
+								<label for="expiration-date">Expected Expiry Date:</label>							
+								<input type="date" id="expiration-date" name="expiration-date" required>
+								<br>
+								<br>
+								<br>
+								<button type="submit">Predict Quality</button>
+								<br>
+							</form>
+							<div id="prediction-result"></div>
+						</section>
 					</div>
+				
 				</div>
+				
 			</section>
 
 		<!-- Four -->
